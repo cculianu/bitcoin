@@ -5,9 +5,10 @@
 #ifndef BITCOIN_MAPPORT_H
 #define BITCOIN_MAPPORT_H
 
+static constexpr bool DEFAULT_UPNP = false;
 static constexpr bool DEFAULT_NATPMP = true;
 
-void StartMapPort(bool enable);
+void StartMapPort(bool use_upnp, bool use_pcp);
 void InterruptMapPort();
 void StopMapPort();
 
