@@ -10,6 +10,7 @@
     "qt",
     "tests",
     "wallet",
+    "miniupnpc",
     "zeromq"
   ],
   "features": {
@@ -41,6 +42,12 @@
       "description": "Enable wallet (SQLite)",
       "dependencies": [
         "sqlite3"
+      ]
+    },
+    "miniupnpc": {
+      "description": "Enable UPnP",
+      "dependencies": [
+        "miniupnpc"
       ]
     },
     "zeromq": {
